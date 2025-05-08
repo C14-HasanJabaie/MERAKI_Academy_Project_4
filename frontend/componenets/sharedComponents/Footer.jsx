@@ -13,6 +13,7 @@ const FooterComponent = () => {
             <Card.Body>
               <Card.Title>Card 1 Title</Card.Title>
               <Card.Text>
+                this is services 
               </Card.Text>
               <Button variant="primary">Learn More</Button>
             </Card.Body>
