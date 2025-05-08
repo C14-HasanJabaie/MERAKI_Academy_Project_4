@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-const mongoose = require("mongoose");
 
 const rolesSchema = new mongoose.Schema({
     role : {type : String , required : true},

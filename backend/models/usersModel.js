@@ -43,14 +43,13 @@ userSchema.pre('save', async function(next) {
         const salt = await bcrypt.genSalt(10);
         this.password = await bcrypt.hash(this.password, salt);
     }
-    this.updatedAt = Date.now();
     next();
 });
 
-// Method to compare password
-userSchema.methods.comparePassword = async function(password) {
-    return await bcrypt.compare(password, this.password);
-};
+// Method to compare password need at login 
+// userSchema.methods.comparePassword = async function(password) {
+//     return await bcrypt.compare(password, this.password);
+// };
 
 const User = mongoose.model('User', userSchema);
 

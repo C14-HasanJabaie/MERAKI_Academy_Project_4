@@ -1,10 +1,12 @@
-import React from 'react'
-import "./App.css";
-const App = () => {
+import { useState } from 'react'
+import Home from '../componenets/Home'
+import 'bootstrap/dist/css/bootstrap.min.css';
+function App() {
+
   return (
-   <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <>
+  <Home/>
+    </>
   )
 }
 

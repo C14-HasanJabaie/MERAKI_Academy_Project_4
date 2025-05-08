@@ -1,7 +1,7 @@
 const authorization = (string) => {
     return (req, res, next) => {
-      const userPermission = req.token.permissions;
-      console.log(string, userPermission);
+      const userPermission = req.token.role.permissions;
+      console.log(string, userPermission ,req.token);
   
       if (userPermission.includes(string)) {
         next();
